@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+
+	<meta charset="UTF-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Zespół muzyczny</title>
+    <link href="https://fonts.googleapis.com/css?family=Esteban|Montserrat" rel="stylesheet">
+    <link rel="stylesheet" href="owl-carousel/owl.carousel.css">
+    <link rel="stylesheet" href="owl-carousel/owl.theme.css">
+    <link rel="stylesheet" href="css/jquery.modal.css">
+    <link rel="stylesheet" href="css/main.css">
+
+</head>
+<body>
+
+<input type="checkbox" id="menu-button" class="menu-button" name="menu-button">
+<label for="menu-button">
+    <div id="nav-icon" class="nav-icon">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+</label>
+
+
+<nav class="navbar">
+    <ul class="main-menu">
+        <li><a href="index.html" data-target="index">Strona Główna</a></li>
+        <li><a href="o-nas.html" data-target="o-nas">O nas</a></li>
+        <li class="active"><a href="muzyka.html" data-target="muzyka">Muzyka</a></li>
+        <li><a href="video.html" data-target="video">Video</a></li>
+        <li><a href="oferta.html" data-target="oferta">Oferta</a></li>
+        <li><a href="kontakt.html" data-target="kontakt">Kontakt</a></li>
+    </ul>
+</nav>
+
+<div class="container">
+    <div class="content music">
+
+    <!-- <iframe src="https://embed.spotify.com/?uri=spotify:user:spotify:playlist:1WDw5izv4UhpobNdGXQug7" width="100%" height="100%" frameborder="0" allowtransparency="true"></iframe> -->
+
+        <div id="audio-player" class="audio-player">
+            <div class="now-playing">
+                <span class="playing">Teraz gra</span>
+                <span class="now-playing-title">Czerwone korale</span>
+            </div>
+            <audio width="100%">
+                <source src="audio/korale.mp3" type="audio/mp3">
+            </audio>
+            <div class="controls">
+                <div class="left-controls">
+                    <div class="play-pause"><img src="img/play.svg" alt=""></div>
+                </div>
+                <div class="progress-bar">
+                    <div class="loaded"></div>
+                    <div class="played"></div>
+                </div>
+                <div class="right-controls">
+                    <div class="time">
+                        <span class="current-time">0:00</span>
+                        /
+                        <span class="total-time">0:00</span>
+                    </div>
+                    <div class="volume">
+                        <div class="volume-icon"></div>
+                        <div class="full-volume">
+                            <div class="current-volume"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="playlist">
+                <ul id="playlist-items">
+                    <li>
+                        <span class="item-number">1.</span>
+                        <span class="playlist-item" data-track="korale">Czerwone Korale</span>
+                        <span class="download"><a href="audio/korale.mp3" download>(Pobierz)</a></span>
+                        <span class="duration-time">3:32</span>
+                    </li>
+                    <li>
+                        <span class="item-number">2.</span>
+                        <span class="playlist-item" data-track="medley">Medley</span>
+                        <span class="download"><a href="audio/medley.mp3" download>(Pobierz)</a></span>
+                        <span class="duration-time">5:52</span>
+                    </li>
+                    <li>
+                        <span class="item-number">3.</span>
+                        <span class="playlist-item" data-track="proud_merry">Proud Merry</span>
+                        <span class="download"><a href="audio/proud_merry.mp3" download>(Pobierz)</a></span>
+                        <span class="duration-time">4:48</span>
+                    </li>
+                    <li>
+                        <span class="item-number">4.</span>
+                        <span class="playlist-item" data-track="eyes">Can't Take My Eyes off You</span>
+                        <span class="download"><a href="audio/eyes.mp3" download>(Pobierz)</a></span>
+                        <span class="duration-time">4:55</span>
+                    </li>
+                </ul>
+            </div>
+
+
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p>Copyright: copyright Kontakt: abc@mail.com</p>
+</footer>
+
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.js"></script>
+<script src="js/audio-player.js"></script>
+<script src="js/scripts.js"></script>
+
+<script>
+
+</script>
+
+
+
+</body>
+</html>

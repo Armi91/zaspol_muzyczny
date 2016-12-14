@@ -1,0 +1,63 @@
+// Media queries
+
+@mixin mobile{
+	@media all and (max-width: 766px){
+		@content;
+	}
+}
+
+@mixin tablet{
+	@media all and (max-width: 1023px){
+		@content;
+	}
+}
+
+// Colors
+
+$player_color: #121314;
+$playlist_color: #1c1c1f;
+$player_font_color: #FFFFFF;
+
+// Fonts
+
+@import url("//fonts.googleapis.com/css?family=Yanone+Kaffeesatz:200,300,400");
+
+
+$esteban: 'Esteban', serif;
+$monnserat: 'Montserrat', sans-serif;
+$player_font: 'Yanone Kaffeesatz';
+
+// Helpers
+
+@mixin centerY{
+	position: relative;
+	top: 50%;
+	transform: translate(0, -50%);
+}
+
+@mixin centerX{
+	position: relative;
+	left: 50%;
+	transform: translate(-50%, 0);
+}
+
+@mixin full{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+@mixin clearfix{
+	zoom:1;
+
+	&:before,
+	&:after {
+	    content:"";
+	    display:table;
+	}
+	&:after {
+	    clear:both;
+	}
+}
